@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class= "PatchOperationAdd" MayRequire="ordpus.leftovers">
+        <xpath>/Defs/ThingDef[defName="BasicKibblePlate"]/building/fixedStorageSettings/filter/thingDefs</xpath>
+        <value>
+          <li>Leftovers</li>
+        </value>
+      </li>
+      <li Class= "PatchOperationAdd" MayRequire="ordpus.leftovers">
+        <xpath>/Defs/ThingDef[defName="BasicKibblePlate"]/building/defaultStorageSettings/filter/thingDefs</xpath>
+        <value>
+          <li>Leftovers</li>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>
