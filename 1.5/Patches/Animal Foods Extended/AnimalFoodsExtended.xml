@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class= "PatchOperationAdd" MayRequire="TheVillain.Animalfoodsextended">
+        <xpath>/Defs/ThingDef[defName="BasicKibblePlate"]/building/fixedStorageSettings/filter/thingDefs</xpath>
+        <value>
+          <li>PetFood</li>
+          <li>GrazingFeedstock</li>
+          <li>RenderedMeat</li>
+        </value>
+      </li>
+      <li Class= "PatchOperationAdd" MayRequire="TheVillain.Animalfoodsextended">
+        <xpath>/Defs/ThingDef[defName="BasicKibblePlate"]/building/defaultStorageSettings/filter/thingDefs</xpath>
+        <value>
+          <li>PetFood</li>
+          <li>GrazingFeedstock</li>
+          <li>RenderedMeat</li>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>
