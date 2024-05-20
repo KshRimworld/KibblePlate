@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="StorageShelfBase">
+    <defName>BasicKibblePlate</defName>
+    <label>kibble plate</label>
+    <description>a simple food bowl for feeding animals.</description>
+    <designationCategory>Misc</designationCategory>
+    <graphicData>
+      <texPath>Things/Building/Misc/KibblePlate</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+    </graphicData>
+    <defaultPlacingRot>North</defaultPlacingRot>
+    <uiIconScale>0.5</uiIconScale>
+    <costStuffCount>10</costStuffCount>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Mass>4</Mass>
+      <WorkToBuild>250</WorkToBuild>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">2.5</StyleDominance>
+    </statBases>
+    <size>(1,1)</size>
+    <rotatable>false</rotatable>
+    <building>
+      <maxItemsInCell>1</maxItemsInCell>
+      <fixedStorageSettings>
+        <filter>
+          <disallowNotEverStorable>true</disallowNotEverStorable>
+          <categories Inherit="false">
+            <li>MeatRaw</li>
+            <li>PlantFoodRaw</li>
+            <li>AnimalProductRaw</li>
+          </categories>
+          <thingDefs>
+            <li>Kibble</li>
+            <li>Hay</li>
+          </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings Inherit="false">
+        <priority>Preferred</priority>
+        <filter>
+          <thingDefs>
+            <li>Kibble</li>
+            <li>Hay</li>
+          </thingDefs>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+  </ThingDef>
+</Defs>

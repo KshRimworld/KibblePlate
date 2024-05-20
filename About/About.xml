@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Kibble Plate</name>
+	<author>MN</author>
+	<packageId>mn.kibblePlate</packageId>
+	<description>a simple kibble plate mod.</description>
+	<url></url>
+	<supportedVersions>
+		<li>1.5</li>
+	</supportedVersions>
+</ModMetaData>
