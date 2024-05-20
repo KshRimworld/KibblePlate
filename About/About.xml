@@ -10,5 +10,6 @@
 	</supportedVersions>
 	<loadAfter>
 		<li>ordpus.leftovers</li>
+		<li>TheVillain.Animalfoodsextended</li>
 	</loadAfter>
 </ModMetaData>
